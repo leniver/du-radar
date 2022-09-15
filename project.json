@@ -1,0 +1,33 @@
+{
+  "cli": {
+    "fmtVersion": 3
+  },
+  "name": "DURadar",
+  "description": "",
+  "sourcePath": "src",
+  "outputPath": "out",
+  "builds": {
+    "main": {
+      "name": "main",
+      "type": "control",
+      "slots": {
+        "db": {
+          "name": "radar",
+          "type": "radar"
+        }
+      }
+    }
+  },
+  "targets": {
+    "development": {
+      "name": "development",
+      "handleErrors": false,
+      "minify": false
+    },
+    "production": {
+      "name": "production",
+      "handleErrors": true,
+      "minify": true
+    }
+  }
+}
